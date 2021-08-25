@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net5.0;netcoreapp3.1;netcoreapp2.1;netstandard2.1;net48;net461</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>Mimp.SeeSharper.Meta.Abstraction</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyTitle>SeeSharper Meta Abstraction</AssemblyTitle>
+    <Description>SeeSharper Meta Abstraction help you to provide meta data from members.</Description>
+    <Authors>SeeSharper Contributors</Authors>
+    <Company>Mimp</Company>
+    <Product>SeeSharper Meta Abstraction</Product>
+    <Copyright>Copyright © 2021 SeeSharper Contributors</Copyright>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageId>Mimp.SeeSharper.Meta.Abstraction</PackageId>
+    <Version>1.0.0</Version>
+    <PackageTags>seesharper;.net;meta;metadata</PackageTags>
+    <PackageProjectUrl>https://github.com/DavenaHack/SeeSharper.Meta</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/DavenaHack/SeeSharper.Meta</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Label="nullable">
+    <Nullable>enable</Nullable>
+    <DefineConstants Condition="'$(TargetFramework)' != 'netcoreapp2.1' and '$(TargetFramework)' != 'net48' and '$(TargetFramework)' != 'net461'">NullableAttributes;true</DefineConstants>
+    <WarningsAsErrors>nullable</WarningsAsErrors>
+  </PropertyGroup>
+
+</Project>
